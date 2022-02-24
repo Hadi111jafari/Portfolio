@@ -94,6 +94,16 @@ body {
     color: #344563;
   }
 
+  footer h2 {
+    margin-top: 103px;
+    margin-bottom: 6px;
+    color: #fff;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
   .social h2 {
     margin: 15px 106px 7px 260px;
     font-weight: 500;
@@ -121,7 +131,7 @@ body {
     border-radius: 24px;
     margin: 142px;
   }
-  
+
   .card img {
     margin: 23px;
     width: 400px;
@@ -133,7 +143,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
   }
-  
+
   #curser {
     width: 57px;
     height: 57px;
@@ -143,7 +153,7 @@ body {
   }
 
   #button {
-    background: #4053FC;
+    background: #4053fc;
     color: #fff;
   }
 
@@ -218,7 +228,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
+    padding: 0;
     margin: 11px;
   }
 
@@ -335,6 +345,27 @@ body {
     color: #172b4d;
   }
 
+  .language {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: #f7f7f9;
+    border-radius: 8px;
+    margin: 10px 10px 10px 0;
+    list-style-type: none;
+    width: 10%;
+  }
+
+  .language p {
+    color: #253858;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+  }
+
   #about1 p {
     align-self: center;
     margin: 6px;
@@ -382,34 +413,11 @@ body {
     margin: 0;
   }
 
-  .language {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    background: #f7f7f9;
-    border-radius: 8px;
-    margin: 10px 10px 10px 0;
-    list-style-type: none;
-    width: 10%;
-    background: #f7f7f9;
-    border-radius: 8px;
-  }
-
   .language img {
-    border: 1px solid #ffffff;
+    border: 1px solid #fff;
     border-radius: 50%;
     width: 48px;
     height: 48px;
-  }
-
-  .language p {
-    color: #253858;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
   }
 
   .showcase-list {
@@ -437,7 +445,7 @@ body {
     padding: 0;
     background-color: #fff;
   }
-  
+
   footer {
     display: flex;
     flex-direction: column;
@@ -445,16 +453,6 @@ body {
     background: url("./images/Ellipse13.png") right no-repeat, url("./images/Ellipse4.png") right bottom no-repeat, url("./images/Ellipse11.png") left no-repeat, url("./image/Ellipse3.png") right no-repeat, url("./images/Ellipse5.png") bottom right no-repeat, url("./images/Ellipse14.png")  left bottom no-repeat;
     border-radius: 70px 0 0 0;
     background-color: #6070ff;
-  }
-
-  footer h2 {
-    margin-top: 103px;
-    margin-bottom: 6px;
-    color: #fff;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 52px;
   }
 
   #para {
@@ -502,7 +500,7 @@ body {
     box-sizing: border-box;
   }
 
-  .button {  
+  .button {
     margin: 27px 0 127px 0;
     padding: 12px 16px;
     width: 30%;
