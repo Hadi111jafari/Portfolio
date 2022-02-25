@@ -16,6 +16,7 @@ body {
     margin: 0;
     padding: 0;
   }
+
   #desktop-nav {
     display: none;
   }
@@ -102,6 +103,20 @@ body {
     color: #505f79;
   }
 
+  .card img {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    padding: 16px;
+  }
+
+  .language img {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+  }
+
   .social-icons li img {
     width: 20px;
     height: 20px;
@@ -114,13 +129,6 @@ body {
     border: 1px solid #dfe1e6;
     border-radius: 24px;
     margin: 142px 24px;
-  }
-
-  .card img {
-    margin: 0;
-    width: 100%;
-    height: auto;
-    padding: 16px;
   }
 
   .card-content {
@@ -192,7 +200,7 @@ body {
     flex-direction: row;
     align-items: center;
     padding: 0;
-    margin: 12px 0px;
+    margin: 12px 0;
   }
 
   .languages li {
@@ -284,12 +292,23 @@ body {
     margin: 114px 24px 20px 24px;
   }
 
-  #about1 h3 {  
-    margin: 12px 0px;
+  #about1 h3 {
+    margin: 12px 0;
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
     color: #172b4d;
+  }
+
+  .language p {
+    color: #253858;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
   }
 
   #about1 p {
@@ -298,7 +317,7 @@ body {
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
-    margin: 12px 0px;
+    margin: 12px 0;
     align-self: center;
   }
 
@@ -320,17 +339,6 @@ body {
     list-style-type: none;
   }
 
-  .language p {
-    color: #253858;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-    display: flex;
-    margin-left: 10px;
-    align-items: center;
-  }
-
   #get-resume {
     margin: 32px 16px 0 8px;
     border: 1px solid #396df2;
@@ -348,7 +356,6 @@ body {
     line-height: 24px;
     font-weight: 500;
     color: #000;
-    /* margin: 36px 0; */
     padding: 0;
     width: 93%;
     margin: 0 0 103px 0;
@@ -366,13 +373,6 @@ body {
   #languages {
     padding: 0;
     margin: 0;
-  }
-
-  .language img {
-    border: 1px solid #fff;
-    border-radius: 50%;
-    width: 48px;
-    height: 48px;
   }
 
   .showcase-list {
@@ -590,60 +590,13 @@ body {
     font-size: 15px;
     line-height: 20px;
   }
+
   nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: #fff;
     height: 118px;
-  }
-
-  nav a {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 20px;
-    color: #6070ff;
-    text-decoration: none;
-    width: 76px;
-    height: 20px;
-    margin: 28px 143px;
-    padding: 10px 12px;
-  }
-
-  #list {
-    margin: 15px 142px;
-    padding: 0;
-  }
-
-  #list-2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style-type: none;
-  }
-
-  #portfolio {
-    padding: 10px 12px;
-    color: #344563;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-  }
-
-  #about {
-    padding: 10px 12px;
-    color: #344563;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-  }
-
-  #contact {
-    padding: 10px 12px;
-    color: #344563;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
   }
 
   header {
