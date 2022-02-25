@@ -66,8 +66,14 @@ body {
     line-height: 52px;
     color: #172b4d;
     font-style: normal;
+    transition-property: color;
+    transition-duration: 2s;
+    transition-delay: 2s;
   }
+#intro:hover{
 
+color: #2230d2;
+}
   #bio {
     color: #344563;
     font-style: normal;
