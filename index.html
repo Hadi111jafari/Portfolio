@@ -14,8 +14,9 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <nav>
-      <a href="#">My Logo</a>
+    <!-- Desktop nav -->
+    <nav id="desktop-nav">
+      <a href="#">Hadi Jafari</a>
       <div id="list">
         <ul id="list-2">
           <li id="portfolio">Portfolio</li>
@@ -24,18 +25,26 @@
         </ul>
       </div>
     </nav>
-    <header>
-      <h1>
+
+    <!-- Mobile nav -->
+    <nav id="mobile-nav">
+      <a id="logo" href="">Hadi Jafari</a>
+      <img id="nav-img" src="images/Union.png" alt="navbar" />
+    </nav>
+
+
+    <header class="content-area" >
+      <h1 id="intro">
         I'm Abdul Hadi Jafari <br />
         Glad to see you!
       </h1>
-      <p>
+      <p id="bio">
         I’m a software developer! I can help you build a product , feature or
         website Look through some of my work and experience! If you like what
         you see and have a project you need coded, don’t hestiate to contact me.
       </p>
-      <div class="social">
-        <h2>LET'S CONNECT</h2>
+      <div class="social" >
+        <h2 id="in-touch">LET'S CONNECT</h2>
         <ul class="social-icons">
           <li><i class="fa-brands fa-twitter"></i></li>
           <li><i class="fa-brands fa-linkedin"></i></li>
@@ -80,7 +89,7 @@
               <li class="year">2015</li>
             </ul>
           </div>
-
+        
           <p>
             Experimental content creation feature that allows users to add to an
             existing story over the course of a day without spamming their
@@ -88,7 +97,7 @@
           </p>
           <ul class="languages">
             <li>html</li>
-            <li>Ruby on rails</li>
+            <li class="ror">Ruby on rails</li>
             <li>css</li>
             <li>javascript</li>
           </ul>
@@ -115,7 +124,7 @@
           </p>
           <ul class="languages">
             <li>html</li>
-            <li>Ruby on rails</li>
+            <li class="ror">Ruby on rails</li>
             <li>css</li>
             <li>javascript</li>
           </ul>
@@ -143,7 +152,7 @@
           </p>
           <ul class="languages">
             <li>html</li>
-            <li>Ruby on rails</li>
+            <li class="ror">Ruby on rails</li>
             <li>css</li>
             <li>javascript</li>
           </ul>
@@ -166,7 +175,7 @@
               </p>
       
               <div id="about-social">
-                <p>Let's connect</p>
+                <p id="connection">Let's connect</p>
                 <ul class="social-icons">
                   <li><i class="fa-brands fa-twitter"></i></li>
                   <li><i class="fa-brands fa-linkedin"></i></li>
@@ -177,9 +186,9 @@
               </div>
               
               <button type="button" id="get-resume">Get my resume</button>      
-            </div>  
+        </div>  
   
-            <div class="lang">
+        <div class="lang">
           <ul class="showcase">
             <li class="showcase-list">
               <p>Languages</p>
@@ -215,7 +224,7 @@
     </main>
       <section id="contacts">
         <footer>
-            <h2>Contact me</h2>
+            <h2 id="contact-me">Contact me</h2>
             <p id="para">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
             <form action="https://formspree.io/f/mpzbdeab" method="post">
               <input class="name" type="text" name="user-name" maxlength="30" placeholder="Write Your Name Here" required>
