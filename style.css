@@ -70,10 +70,11 @@ body {
     transition-duration: 2s;
     transition-delay: 2s;
   }
-#intro:hover{
 
-color: #2230d2;
-}
+  #intro:hover {
+    color: #2230d2;
+  }
+
   #bio {
     color: #344563;
     font-style: normal;
@@ -135,7 +136,6 @@ color: #2230d2;
     border: 1px solid #dfe1e6;
     border-radius: 24px;
     margin: 142px 24px;
-    
   }
 
   .card:hover {
