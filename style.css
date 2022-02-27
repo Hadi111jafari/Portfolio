@@ -66,13 +66,56 @@ body {
     line-height: 52px;
     color: #172b4d;
     font-style: normal;
-    transition-property: color;
-    transition-duration: 2s;
-    transition-delay: 2s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
 
-  #intro:hover {
-    color: #2230d2;
+  .author-name {
+    display: block;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-out;
+  }
+
+  .greet {
+    display: block;
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.5s;
+  }
+
+  @keyframes moveInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+
+    80% {
+      transform: translateX(5px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+
+  @keyframes moveInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+
+    80% {
+      transform: translateX(-5px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
   }
 
   #bio {
@@ -136,10 +179,6 @@ body {
     border: 1px solid #dfe1e6;
     border-radius: 24px;
     margin: 142px 24px;
-  }
-
-  .card:hover {
-    transform: scale(1.1);
   }
 
   .card-content {
@@ -257,7 +296,7 @@ body {
     border-radius: 6px;
     width: 130px;
     height: 50px;
-    margin: 0 5px;
+    margin: 5px 5px 5px 0;
   }
 
   .btn:focus {
@@ -273,7 +312,7 @@ body {
     border-radius: 6px;
     width: 130px;
     height: 50px;
-    margin: 0 5px;
+    margin: 5px 5px 5px 0;
   }
 
   .btn:disabled {
@@ -289,7 +328,7 @@ body {
     border-radius: 6px;
     width: 130px;
     height: 50px;
-    margin: 0 5px;
+    margin: 5px 5px 5px 0;
   }
 
   #ab-lang {
@@ -493,7 +532,7 @@ body {
   }
 
   .button:hover {
-    margin: 12px 0 14px 0;
+    margin: 17px 0 47px 0;
     padding: 12px 16px;
     width: 30%;
     height: 10%;
@@ -509,7 +548,7 @@ body {
   }
 
   .button:active {
-    margin: 12px 0 14px 0;
+    margin: 17px 0 47px 0;
     padding: 12px 16px;
     width: 30%;
     height: 10%;
@@ -525,7 +564,7 @@ body {
   }
 
   .button:disabled {
-    margin: 12px 0 14px 0;
+    margin: 17px 0 47px 0;
     padding: 12px 16px;
     width: 30%;
     height: 10%;
@@ -560,7 +599,6 @@ body {
     line-height: 20px;
     color: #6070ff;
     text-decoration: none;
-    width: 76px;
     height: 20px;
     margin: 28px 143px;
     padding: 10px 12px;
@@ -628,6 +666,56 @@ body {
     padding: 241px 260px 6px 260px;
     color: #091e42;
     margin: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .author-name {
+    display: block;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-out;
+  }
+
+  .greet {
+    display: block;
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.5s;
+  }
+
+  @keyframes moveInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+
+    80% {
+      transform: translateX(10px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+
+  @keyframes moveInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+
+    80% {
+      transform: translateX(-10px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
   }
 
   header p {
@@ -920,6 +1008,7 @@ body {
   }
 
   #get-resume {
+    cursor: pointer;
     margin: 32px 16px 0 8px;
     border: 1px solid #396df2;
     font-weight: bold;
@@ -929,6 +1018,19 @@ body {
     color: #396df2;
     letter-spacing: 0.03em;
     font-size: 17px;
+  }
+
+  #get-resume:active {
+    cursor: pointer;
+    margin: 32px 16px 0 8px;
+    border: 1px solid #cfd8dc;
+    font-weight: bold;
+    border-radius: 7px;
+    padding: 0.8rem 1rem;
+    letter-spacing: 0.03em;
+    font-size: 17px;
+    background: #2230d2;
+    color: #fff;
   }
 
   .lang {
@@ -1049,6 +1151,7 @@ body {
   }
 
   .button {
+    cursor: pointer;
     margin: 27px 0 127px 0;
     padding: 12px 16px;
     width: 30%;
@@ -1067,35 +1170,41 @@ body {
   }
 
   .button:hover {
-    margin: 12px 0 14px 0;
+    cursor: pointer;
+    margin: 27px 0 127px 0;
     padding: 12px 16px;
     width: 30%;
     height: 10%;
-    background: #6070ff;
-    color: #fff;
     border-radius: 8px;
+    background: #2230d2;
+    color: #fff;
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
     letter-spacing: 0.03em;
     border: 1px solid #cfd8dc;
+    min-width: 140px;
+    align-self: center;
   }
 
   .button:active {
-    margin: 12px 0 14px 0;
+    cursor: pointer;
+    margin: 27px 0 127px 0;
     padding: 12px 16px;
     width: 30%;
     height: 10%;
+    border-radius: 8px;
     background: #2230d2;
     color: #fff;
-    border-radius: 8px;
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
     letter-spacing: 0.03em;
     border: 1px solid #cfd8dc;
+    min-width: 140px;
+    align-self: center;
   }
 
   .button:disabled {
