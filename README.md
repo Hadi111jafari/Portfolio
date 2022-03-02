@@ -1,12 +1,14 @@
 # Portfolio
 
-> In this project I created a pertfolio which is adaptable on Desktop as well as on mobile/smartphone. My Portfolio website help others understand who i am and what technologies i know and how to get in touch with me. Please view my portfolio page in your browser by following this link https://hadi111jafari.github.io/Portfolio/
+> In this project I created a pertfolio which is adaptable on Desktop as well as on mobile/smartphone. My Portfolio website help others understand who i am and what technologies i know and how to get in touch with me. 
 
 
 ## Built With
-
 - html
 - css
+
+## Live demo 
+[Live page](https://github.com/Hadi111jafari/Portfolio)
 
 ## Getting Started
 1. Please go to https://hadi111jafari.github.io/Portfolio/
@@ -18,8 +20,6 @@
      3. On same line paste the the copied clone command from GitHub
      4.  Then click Enter. Now you are the repository/directory on your local machine.
      
-### Setup
-GitHub account 
 
 ### Install
 VS code
