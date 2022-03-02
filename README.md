@@ -8,13 +8,13 @@
 - css
 
 ## Live demo 
-[Live page](https://github.com/Hadi111jafari/Portfolio)
+[Live page](https://hadi111jafari.github.io/Portfolio/)
 
 ## Getting Started
-1. Please go to https://hadi111jafari.github.io/Portfolio/
-2. Click on repositories
-3. Choose repository "Portfolio" or click to  https://hadi111jafari.github.io/Portfolio/
-4. Then clone the repository to your local machine by using the following steps:
+
+1. Click on repositories
+2. Choose repository "Portfolio" or click to  https://github.com/Hadi111jafari/Portfolio
+3. Then clone the repository to your local machine by using the following steps:
      1. From repository click on code button and copy clone cammand(Kindly make sure you choose SHH format)
      2. From your terminal type "git clone" command line
      3. On same line paste the the copied clone command from GitHub
