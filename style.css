@@ -26,13 +26,14 @@ body {
 
   .navbar.active {
     background-color: #6070ff;
+    opacity: .9;
   }
 
   .nav-branding {
     font-weight: bold;
     font-size: 18px;
     line-height: 20px;
-    color: #6070ff;
+    color: #384ae6;
     text-decoration: none;
     height: 20px;
   }
@@ -51,11 +52,6 @@ body {
     line-height: 44px;
   }
 
-  .nav-link:hover {
-    color: dodgerblue;
-    font-weight: 500;
-  }
-
   .bar {
     display: block;
     width: 20px;
@@ -69,6 +65,7 @@ body {
 
   .hamburger {
     display: block;
+    cursor: pointer;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -76,19 +73,23 @@ body {
   }
 
   .hamburger.active .bar:nth-child(1) {
-    transform: translateY(6px) rotate(45deg);
+    transform: translateY(5.5px) rotate(45deg);
     background-color: #fff;
+    position: fixed;
+    cursor: pointer;
   }
 
   .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-6px) rotate(-45deg);
+    transform: translateY(-5.5px) rotate(-45deg);
     background-color: #fff;
+    position: fixed;
+    cursor: pointer;
   }
 
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 70px;
+    top: 0;
     gap: 0;
     flex-direction: column;
     background-color: #384ae6;
