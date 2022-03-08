@@ -4,21 +4,10 @@ const navMenu = document.querySelector(".nav-menu");
 hamburger.addEventListener("click", function() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
-})
 
-
-const btn = document.querySelector(".btn");
-
-btn.addEventListener("click", function() {
-    btn.classList.add("active");
 });
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}));
 
-btn.onclick = function() {
-    modal.style.display = "block";
-  }
-
-const card = document.querySelector(".card");
-
-card.addEventListener("click", function() {
-    card.classList.add("active");
-});
