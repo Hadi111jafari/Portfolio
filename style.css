@@ -15,10 +15,11 @@ body {
   .ror {
     display: none;
   }
-  
+
   body.active {
     overflow: hidden;
   }
+
   .navbar {
     display: flex;
     flex-direction: row;
@@ -109,6 +110,7 @@ body {
     z-index: 1;
     backdrop-filter: blur(5px);
   }
+
   /* .content-area.active {
     filter: blur(4px);
 
