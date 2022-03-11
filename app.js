@@ -53,5 +53,5 @@ form.addEventListener('submit', (ev) => {
       success.innerText = 'Success!';
     }
   }
-  // validateForm();
+  validateForm();
 });
