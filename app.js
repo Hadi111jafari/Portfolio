@@ -26,6 +26,9 @@ const cards = [
     tech1: 'html',
     tech2: 'css',
     tech3: 'javascript',
+    tech4: 'github',
+    tech5: 'ruby',
+    tech6: 'Bootstrap',
     modalId: 'card1',
     liveVersionLink: 'https://github.com/hadi111jafari',
     sourceLink: 'https://github.com/hadi111jafari',
@@ -45,6 +48,9 @@ const cards = [
     tech1: 'html',
     tech2: 'css',
     tech3: 'javascript',
+    tech4: 'github',
+    tech5: 'ruby',
+    tech6: 'Bootstrap',
     modalId: 'card2',
     liveVersionLink: 'https://github.com/hadi111jafari',
     sourceLink: 'https://github.com/hadi111jafari',
@@ -62,6 +68,9 @@ const cards = [
     tech1: 'html',
     tech2: 'css',
     tech3: 'javascript',
+    tech4: 'github',
+    tech5: 'ruby',
+    tech6: 'Bootstrap',
     modalId: 'card3',
     liveVersionLink: 'https://github.com/hadi111jafari',
     sourceLink: 'https://github.com/hadi111jafari',
@@ -78,6 +87,9 @@ const cards = [
     tech1: 'html',
     tech2: 'css',
     tech3: 'javascript',
+    tech4: 'github',
+    tech5: 'ruby',
+    tech6: 'Bootstrap',
     modalId: 'card4',
     liveVersionLink: 'https://github.com/hadi111jafari',
     sourceLink: 'https://github.com/hadi111jafari',
@@ -114,29 +126,29 @@ function newCard(card) {
       </div>
   `;
 }
+// eslint-disable-next-line no-unused-vars
 function openModal(modalId) {
-  const btnOpen = document.querySelector(`#${modalId}`);
   const modalOverlay = document.querySelector('.modal-overlay');
-  btnOpen.addEventListener('click', () => {
-    modalOverlay.classList.add('show-container');
-  });
+
+  modalOverlay.classList.add('show-container');
+
   cards.forEach((card) => {
     if (card.modalId === modalId) {
       const x = document.querySelector('.modal-container');
       x.innerHTML = `
-  <div class="card">
-  <div class="card-content">
+  <div class="cardP">
+  <div class="card-contentP">
   <h2>${card.name}</h2>
-  <div class="list-1">
+  <div class="list-1P">
   <p>${card.company}</p>
-  <ul class="field">
-  <li class="backend">${card.stack}</li>
-  <li class="year">${card.year}</li>
+  <ul class="fieldP">
+  <li class="backendP">${card.stack}</li>
+  <li class="yearP">${card.year}</li>
   </ul>
   </div>
-  <img src="${card.featuredImage}" alt="" />
+  <img id="imgP" src="${card.featuredImage}" alt="" />
     
-    <p>
+    <p id="paraP">
     ${card.description}
     </p>
     <ul class="languages">
@@ -147,15 +159,15 @@ function openModal(modalId) {
     <div id="btn-curser">
     <div style="display:flex;">
     <div class="SLB">
-        <a href="${card.liveVersionLink}">LIve version</a>
-        <i>icon goes here</i>
+        <a href="${card.liveVersionLink}">See Live </a>
+        <img src="images/onoff.png" alt="livevsersionlink" />
     </div>
-    <div>
+    <div class="SLB">
         <a href="${card.sourceLink}">source code</a>
-        <i>icon goes here</i>
+        <img src="images/github1.png" alt="github" />
     </div>
-</div>      
-    </div>
+    </div>      
+   </div>
   </div>
 </div>
 <button class="btn-close"><i class="fas fa-times"></i></button>
@@ -178,4 +190,3 @@ const cardQuantity = cards.length;
 for (let i = 0; i < cardQuantity; i += 1) {
   cardsContainer.appendChild(generatedCard[i]);
 }
-openModal();
