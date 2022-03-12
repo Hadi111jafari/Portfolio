@@ -53,9 +53,9 @@ form.addEventListener('submit', (ev) => {
 
 const usrD = {};
 function saveD(usrD) {
-  const fName = document.querySelector('.name').value;
-  const fEmail = document.querySelector('.email').value;
-  const fMessage = document.querySelector('#message').value;
+  const fName = document.querySelector('name').value;
+  const fEmail = document.querySelector('email').value;
+  const fMessage = document.querySelector('message').value;
   usrD = {
     name: fName,
     email: fEmail,
