@@ -55,3 +55,38 @@ form.addEventListener('submit', (ev) => {
   }
   validateForm();
 });
+
+const usrD = {};
+function saveD(usrD) {
+  const fName = document.querySelector('.name').value;
+  const fEmail = document.querySelector('.email').value;
+  const fMessage = document.querySelector('#message').value;
+  usrD = {
+    name: fName,
+    email: fEmail,
+    message: fMessage,
+  };
+  localStorage.setItem('user', JSON.stringify(usrD));
+  let dataRecord = [];
+  dataRecord = JSON.parse(localStorage.getItem('dUser'));
+  dataRecord.push({
+    name: fName,
+    email: fEmail,
+    message: fMessage,
+  });
+  localStorage.setItem('dUser', JSON.stringify(dataRecord));
+}
+
+form.addEventListener('change', () => {
+  saveD(usrD);
+});
+
+window.addEventListener('load', () => {
+  const storage = JSON.parse(localStorage.getItem('user'));
+  if (storage) {
+    Object.entries(storage).forEach((inputForm) => {
+      const [key, value] = inputForm;
+      document.getElementById(key).value = value;
+    });
+  }
+});
