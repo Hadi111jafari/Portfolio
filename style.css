@@ -606,7 +606,7 @@ body {
   }
 
   #success {
-    color: #28a745;
+    color: #00ff3c;
     float: right;
   }
 
@@ -1246,8 +1246,8 @@ body {
   }
 
   #success {
-    color: #28a745;
-    
+    color: #00ff3c;
+    float: right;
   }
 
   .button {
