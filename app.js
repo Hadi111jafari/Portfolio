@@ -11,3 +11,43 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   navMenu.classList.remove('active');
   document.querySelector('body').classList.toggle('active');
 }));
+// Get Data
+const form = document.querySelector('form');
+const nameInput = document.querySelector('.name');
+const email = document.querySelector('.email');
+const message = document.querySelector('#message');
+const success = document.querySelector('#success');
+const errorNodes = document.querySelectorAll('.error');
+form.addEventListener('submit', (ev) => {
+  function validateForm() {
+    // clear error / success messages
+    function clearMessage() {
+      for (let i = 0; i < errorNodes.length; i += 1) {
+        errorNodes[i].innerText = '';
+      }
+      success.innerText = '';
+    }
+    clearMessage();
+    let errorFlag = false;
+    if (nameInput.value.length < 1) {
+      ev.preventDefault();
+      errorNodes[0].innerText = 'Name can not be blank';
+      errorFlag = true;
+    }
+    // check if email is valid
+    if (email.value.length === 0 || email.value !== email.value.toLowerCase()) {
+      ev.preventDefault();
+      errorNodes[1].innerText = 'Invalid Email Address';
+      errorFlag = true;
+    }
+    if (message.value.length < 5) {
+      ev.preventDefault();
+      errorNodes[2].innerText = 'Please Enter Message';
+      errorFlag = true;
+    }
+    if (!errorFlag) {
+      success.innerText = 'Success!';
+    }
+  }
+  validateForm();
+});
