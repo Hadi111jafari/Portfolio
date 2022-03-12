@@ -35,11 +35,7 @@ form.addEventListener('submit', (ev) => {
       errorFlag = true;
     }
     // check if email is valid
-    function emailIsValid(email) {
-      const pattern = /\S+@\S+\.\S+/;
-      return pattern.test(email);
-    }
-    if (!emailIsValid(email.value)) {
+    if (email.value.length === 0 || email.value !== email.value.toLowerCase()) {
       ev.preventDefault();
       errorNodes[1].innerText = 'Invalid Email Address';
       errorFlag = true;
