@@ -306,7 +306,6 @@ body {
 
   .card p {
     font-style: normal;
-    font-weight: 400;
     font-size: 15px;
     line-height: 20px;
     color: #344563;
@@ -348,6 +347,8 @@ body {
     width: 130px;
     height: 50px;
     margin: 5px 5px 5px 0;
+    text-decoration: none;
+    padding: 10px;
   }
 
   .btn:hover {
@@ -364,6 +365,8 @@ body {
     width: 130px;
     height: 50px;
     margin: 5px 5px 5px 0;
+    text-decoration: none;
+    padding: 10px;
   }
 
   .btn:focus {
@@ -380,6 +383,8 @@ body {
     width: 130px;
     height: 50px;
     margin: 5px 5px 5px 0;
+    text-decoration: none;
+    padding: 10px;
   }
 
   .btn:disabled {
@@ -396,6 +401,8 @@ body {
     width: 130px;
     height: 50px;
     margin: 5px 5px 5px 0;
+    text-decoration: none;
+    padding: 10px;
   }
 
   .btn.active {
@@ -412,6 +419,8 @@ body {
     width: 130px;
     height: 50px;
     margin: 5px 5px 5px 0;
+    text-decoration: none;
+    padding: 10px;
   }
 
   .card.active {
@@ -844,8 +853,8 @@ body {
 
   .card img {
     margin: 23px;
-    width: 400px;
-    height: 350px;
+    width: 35%;
+    height: 35%;
   }
 
   #btn-curser {
@@ -865,6 +874,7 @@ body {
   #button {
     background: #4053fc;
     color: #fff;
+    text-decoration: none;
   }
 
   .card-content {
@@ -1301,5 +1311,107 @@ body {
     border: 1px solid #cfd8dc;
     min-width: 140px;
     align-self: center;
+  }
+}
+
+/* Modal */
+.modal-content {
+  width: 90vw;
+  max-width: 620px;
+  min-height: 260px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  align-content: center;
+}
+
+.modal-title {
+  letter-spacing: 3px;
+  font-size: 3rem;
+  color: var(--secondary-color);
+  line-height: 3rem;
+  margin-bottom: 3rem;
+}
+
+.modal-btn {
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-btn:hover {
+  color: var(--primary-color);
+  background: #fff;
+}
+
+/* Modal style */
+.modal-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(73, 166, 233, 0.5);
+  display: grid;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  z-index: -10;
+  transition: all 0.3s ease-in-out;
+}
+
+/* To add in our JS app */
+.show-container {
+  visibility: visible;
+  z-index: 10;
+}
+
+.modal-container {
+  position: relative;
+  width: 90vw;
+  max-width: 620px;
+  background: #fff;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  letter-spacing: 3px;
+  border-radius: 8px;
+}
+
+.btn-close {
+  border: transparent;
+  background: transparent;
+  font-size: 2rem;
+  color: rgb(207, 47, 47);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.btn-close:hover {
+  color: #e66b6b;
+  transform: scale(1.25);
+}
+
+/* media */
+@media screen and (max-width: 992px) {
+  .modal-content {
+    width: 78%;
+  }
+
+  .modal-title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .modal-content {
+    width: 90vw;
+  }
+
+  .modal-title {
+    font-size: 2rem;
   }
 }
