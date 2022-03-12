@@ -64,7 +64,6 @@ body {
   width: 90vw;
   background: #fff;
   margin: 0 auto;
-  display: flex;
   align-items: center;
   letter-spacing: 3px;
   border-radius: 8px;
@@ -311,6 +310,14 @@ body {
     height: 48px;
   }
 
+  .SLB img {
+    height: 20px;
+    width: 17.985200881958008px;
+    left: 0.013671875px;
+    top: 0;
+    border-radius: 0;
+  }
+
   .social-icons li img {
     width: 20px;
     height: 20px;
@@ -364,6 +371,7 @@ body {
     margin: 0;
     padding: 13px 30px;
   }
+
   .fieldP {
     display: flex;
     flex-direction: row;
@@ -406,17 +414,12 @@ body {
     border: 1px solid blue;
     width: 100%;
     border-radius: 5px;
-    display: flex;
     flex-direction: row;
     align-items: center;
     padding: 12px 14px;
-    width: 146px;
     height: 48px;
     left: 157px;
     bottom: 4px;
-    border: 1px solid #6070ff;
-    box-sizing: border-box;
-    border-radius: 8px;
   }
 
   .SLB a {
@@ -427,14 +430,6 @@ body {
     line-height: 20px;
     text-decoration: none;
     padding: 12px 5px;
-  }
-
-  .SLB img {
-    height: 20px;
-    width: 17.985200881958008px;
-    left: 0.013671875px;
-    top: 0px;
-    border-radius: 0px;
   }
 
   .card p {
@@ -615,6 +610,15 @@ body {
     display: flex;
     margin-left: 10px;
     align-items: center;
+  }
+
+  .list-1P p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #344563;
+    margin: 0 12px;
   }
 
   #about1 p {
@@ -839,29 +843,18 @@ body {
     display: flex;
     padding: 16px;
   }
+
   .card-contentP {
     display: flex;
     flex-direction: column;
   }
+
   .card-contentP h2 {
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
     color: #172b4d;
     margin: 15px 12px;
-  }
-
-  .list-1P p {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 16px;
-    color: #344563;
-    margin: 0px 12px;
-  }
-
-  #imgP {
-    width: 100%;
   }
 
   .modal-content {
@@ -1051,9 +1044,6 @@ body {
     border-radius: 24px;
   }
 
-  #imgP {
-    width: 90%;
-  }
   .card img {
     margin: 23px;
     width: 35%;
@@ -1108,6 +1098,7 @@ body {
     width: 100%;
     height: 40%;
   }
+
   .card-content p {
     color: #344563;
     font-weight: 500;
@@ -1205,17 +1196,12 @@ body {
     border: 1px solid blue;
     width: 100%;
     border-radius: 5px;
-    display: flex;
     flex-direction: row;
     align-items: center;
     padding: 12px 14px;
-    width: 146px;
     height: 48px;
     left: 157px;
     bottom: 4px;
-    border: 1px solid #6070ff;
-    box-sizing: border-box;
-    border-radius: 8px;
   }
 
   .SLB a {
@@ -1232,8 +1218,8 @@ body {
     height: 20px;
     width: 17.985200881958008px;
     left: 0.013671875px;
-    top: 0px;
-    border-radius: 0px;
+    top: 0;
+    border-radius: 0;
   }
 
   .cord p {
@@ -1250,20 +1236,6 @@ body {
     align-items: center;
     padding: 0;
     margin: 11px;
-  }
-
-  .languages li {
-    color: #6070ff;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    list-style-type: none;
-    margin: 5px;
-    padding: 4px 7px;
-    background: #ebebff;
-    border-radius: 8px;
   }
 
   .languages {
