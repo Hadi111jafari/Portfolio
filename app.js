@@ -147,15 +147,19 @@ function openModal(modalId) {
   </ul>
   </div>
   <img id="imgP" src="${card.featuredImage}" alt="" />
-    
+   <div id="wrapper-item">
+   <div id="item1"> 
     <p id="paraP">
     ${card.description}
     </p>
+    </div>
+    <div id="wrapper2">
     <ul class="languages">
       <li>${card.tech1}</li>
       <li>${card.tech2}</li>
       <li>${card.tech3}</li>
     </ul>
+  
     <div id="btn-curser">
     <div style="display:flex;">
     <div class="SLB">
@@ -168,9 +172,11 @@ function openModal(modalId) {
     </div>
     </div>      
    </div>
-  </div>
+   </div>
+   </div>
+   </div>
+   <button class="btn-close"><i class="fas fa-times"></i></button>
 </div>
-<button class="btn-close"><i class="fas fa-times"></i></button>
 `;
     }
   });

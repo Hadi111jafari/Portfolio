@@ -1190,6 +1190,15 @@ body {
     margin: 24px 12px;
   }
 
+  #wrapper-item {
+    display: flex;
+    flex-direction: row;
+
+  }
+  #item1 {
+    width: 75%;
+  }
+
   .SLB {
     display: flex;
     margin: 20px 12px;
