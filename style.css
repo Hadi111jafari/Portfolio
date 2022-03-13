@@ -11,6 +11,80 @@ body {
   background: #f4f5f7;
 }
 
+/* Modal */
+.modal-content {
+  width: 90vw;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+}
+
+.modal-title {
+  letter-spacing: 3px;
+  font-size: 3rem;
+  color: var(--secondary-color);
+  line-height: 3rem;
+  margin-bottom: 3rem;
+}
+
+.modal-btn {
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-btn:hover {
+  color: var(--primary-color);
+  background: #fff;
+}
+
+/* Modal style */
+.modal-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(73, 166, 233, 0.5);
+  display: grid;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  z-index: -10;
+  overflow: scroll;
+}
+
+/* To add in our JS app */
+.show-container {
+  visibility: visible;
+  z-index: 10;
+}
+
+.modal-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 90vw;
+  background: #fff;
+  margin: 0 auto;
+  align-items: center;
+  letter-spacing: 3px;
+  border-radius: 8px;
+}
+
+.btn-close {
+  border: transparent;
+  background: transparent;
+  font-size: 2rem;
+  color: rgb(184, 181, 181);
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.btn-close:hover {
+  color: rgb(184, 181, 181);
+  transform: scale(1.25);
+}
+
 @media (max-width: 992px) {
   .ror {
     display: none;
@@ -222,11 +296,26 @@ body {
     padding: 16px;
   }
 
+  #imgP {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    padding: 12px;
+  }
+
   .language img {
     border: 1px solid #fff;
     border-radius: 50%;
     width: 48px;
     height: 48px;
+  }
+
+  .SLB img {
+    height: 20px;
+    width: 17.985200881958008px;
+    left: 0.013671875px;
+    top: 0;
+    border-radius: 0;
   }
 
   .social-icons li img {
@@ -267,7 +356,8 @@ body {
     padding: 10px 0;
   }
 
-  .list-1 {
+  .list-1,
+  .list-1P {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -282,7 +372,16 @@ body {
     padding: 13px 30px;
   }
 
-  .backend {
+  .fieldP {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: circle;
+    margin: 0;
+  }
+
+  .backend,
+  .backendP {
     font-style: normal;
     font-weight: 600;
     font-size: 13px;
@@ -290,7 +389,8 @@ body {
     color: #7a869a;
   }
 
-  .year {
+  .year,
+  .yearP {
     margin-left: 30px;
     font-style: normal;
     font-weight: 600;
@@ -299,12 +399,66 @@ body {
     color: #7a869a;
   }
 
-  .card p {
+  #paraP {
+    color: #344563;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
+    line-height: 24px;
+    margin: 12px 12px;
+  }
+
+  .SLB {
+    display: flex;
+    margin: 20px 12px;
+    border: 1px solid blue;
+    width: 100%;
+    border-radius: 5px;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 14px;
+    height: 48px;
+    left: 157px;
+    bottom: 4px;
+  }
+
+  .SLB a {
+    color: #396df2;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration: none;
+    padding: 12px 5px;
+  }
+
+  .card p {
+    font-style: normal;
+    font-size: 15px;
     line-height: 20px;
     color: #344563;
+  }
+
+  .languagesP {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin: 12px 12px;
+  }
+
+  .languagesP li {
+    color: #6070ff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    list-style-type: none;
+    margin: 12px 10px;
+    padding: 8px 12px;
+    background: #ebebff;
+    border-radius: 4px;
   }
 
   .languages {
@@ -343,6 +497,8 @@ body {
     width: 130px;
     height: 50px;
     margin: 5px 5px 5px 0;
+    text-decoration: none;
+    padding: 10px;
   }
 
   .btn:hover {
@@ -359,6 +515,8 @@ body {
     width: 130px;
     height: 50px;
     margin: 5px 5px 5px 0;
+    text-decoration: none;
+    padding: 10px;
   }
 
   .btn:focus {
@@ -375,6 +533,8 @@ body {
     width: 130px;
     height: 50px;
     margin: 5px 5px 5px 0;
+    text-decoration: none;
+    padding: 10px;
   }
 
   .btn:disabled {
@@ -391,6 +551,8 @@ body {
     width: 130px;
     height: 50px;
     margin: 5px 5px 5px 0;
+    text-decoration: none;
+    padding: 10px;
   }
 
   .btn.active {
@@ -407,6 +569,8 @@ body {
     width: 130px;
     height: 50px;
     margin: 5px 5px 5px 0;
+    text-decoration: none;
+    padding: 10px;
   }
 
   .card.active {
@@ -446,6 +610,15 @@ body {
     display: flex;
     margin-left: 10px;
     align-items: center;
+  }
+
+  .list-1P p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #344563;
+    margin: 0 12px;
   }
 
   #about1 p {
@@ -674,6 +847,32 @@ body {
     letter-spacing: 0.03em;
     border: 1px solid #cfd8dc;
   }
+
+  .cardP {
+    display: flex;
+    padding: 16px;
+  }
+
+  .card-contentP {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-contentP h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+    margin: 15px 12px;
+  }
+
+  .modal-content {
+    width: 78%;
+  }
+
+  .modal-title {
+    font-size: 2rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -846,10 +1045,18 @@ body {
     margin: 142px;
   }
 
+  .cardP {
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 24px;
+  }
+
   .card img {
     margin: 23px;
-    width: 400px;
-    height: 350px;
+    width: 35%;
+    height: 35%;
   }
 
   #btn-curser {
@@ -869,6 +1076,7 @@ body {
   #button {
     background: #4053fc;
     color: #fff;
+    text-decoration: none;
   }
 
   .card-content {
@@ -885,6 +1093,19 @@ body {
     color: #091e42;
     margin: 0;
     padding: 5px;
+  }
+
+  .card-contentP h2 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 45px;
+    color: #091e42;
+    margin: 12px;
+  }
+
+  .card-contentP {
+    width: 100%;
+    height: 40%;
   }
 
   .card-content p {
@@ -904,6 +1125,21 @@ body {
     padding: 0;
   }
 
+  .list-1P {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0 0 0 12px;
+  }
+
+  .fieldP {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    list-style-type: circle;
+  }
+
   .field {
     display: flex;
     flex-direction: row;
@@ -912,8 +1148,26 @@ body {
     list-style-type: circle;
   }
 
+  .backendP {
+    padding-left: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6b778c;
+  }
+
   .backend {
     padding-left: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6b778c;
+  }
+
+  .yearP {
+    margin-left: 30px;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -930,12 +1184,76 @@ body {
     color: #6b778c;
   }
 
+  #imgP {
+    margin: 12px;
+    width: 95%;
+    height: 50%;
+  }
+
+  #paraP {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #091e42;
+    margin: 24px 12px;
+  }
+
+  #wrapper-item {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #item1 {
+    width: 75%;
+  }
+
+  .SLB {
+    display: flex;
+    margin: 20px 12px;
+    border: 1px solid blue;
+    width: 100%;
+    border-radius: 5px;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 14px;
+    height: 48px;
+    left: 157px;
+    bottom: 4px;
+  }
+
+  .SLB a {
+    color: #396df2;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration: none;
+    padding: 12px 5px;
+  }
+
+  .SLB img {
+    height: 20px;
+    width: 17.985200881958008px;
+    left: 0.013671875px;
+    top: 0;
+    border-radius: 0;
+  }
+
   .cord p {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
     color: #344563;
+  }
+
+  .languagesP {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin: 11px;
   }
 
   .languages {
@@ -1324,5 +1642,13 @@ body {
     border: 1px solid #cfd8dc;
     min-width: 140px;
     align-self: center;
+  }
+
+  .modal-content {
+    width: 90vw;
+  }
+
+  .modal-title {
+    font-size: 2rem;
   }
 }
