@@ -1193,8 +1193,8 @@ body {
   #wrapper-item {
     display: flex;
     flex-direction: row;
-
   }
+
   #item1 {
     width: 75%;
   }
