@@ -14,15 +14,14 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
 
 const cards = [
   {
-    name: 'Tonic',
-    company: 'CANOPY',
+    name: 'Todo list',
+    company: 'Hadi',
     stack: 'Back End Dev',
     year: '2015',
     description: `
-    A daily selection of privately personalized reads; no accounts or
-    sign-ups required.
+    You can add your todo and also you can remove your todo.
     `,
-    featuredImage: '/images/Snapshoot-Portfolio.png',
+    featuredImage: '/images/Todo-list.png',
     tech1: 'html',
     tech2: 'css',
     tech3: 'javascript',
@@ -30,8 +29,8 @@ const cards = [
     tech5: 'ruby',
     tech6: 'Bootstrap',
     modalId: 'card1',
-    liveVersionLink: 'https://github.com/hadi111jafari',
-    sourceLink: 'https://github.com/hadi111jafari',
+    liveVersionLink: 'https://hadi111jafari.github.io/To-Do-List/',
+    sourceLink: 'https://github.com/Hadi111jafari/To-Do-List',
   },
 
   {
