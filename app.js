@@ -21,7 +21,7 @@ const cards = [
     description: `
     You can add your todo and also you can remove your todo.
     `,
-    featuredImage: '/images/Todo-list.png',
+    featuredImage: './images/Todo-list.png',
     tech1: 'html',
     tech2: 'css',
     tech3: 'javascript',
@@ -43,7 +43,7 @@ const cards = [
     existing story over the course of a day without spamming their
     friends.
     `,
-    featuredImage: '/images/Snapshoot-Portfolio1.png',
+    featuredImage: './images/Snapshoot-Portfolio1.png',
     tech1: 'html',
     tech2: 'css',
     tech3: 'javascript',
@@ -63,7 +63,7 @@ const cards = [
     description: `
     Exploring the future of media in Facebook's first Virtual Reality
     app; a place to discover and enjoy 360 photos and videos on Gear VR. `,
-    featuredImage: '/images/Snapshoot-Portfolio2.png',
+    featuredImage: './images/Snapshoot-Portfolio2.png',
     tech1: 'html',
     tech2: 'css',
     tech3: 'javascript',
@@ -82,7 +82,7 @@ const cards = [
     description: `
     A smart assistant to make driving more safe, efficient, and fun by
     unlocking your most expensive computer: your car. `,
-    featuredImage: '/images/Snapshoot-Portfolio2.png',
+    featuredImage: './images/Snapshoot-Portfolio2.png',
     tech1: 'html',
     tech2: 'css',
     tech3: 'javascript',
