@@ -103,12 +103,7 @@ body {
   }
 
   .nav-branding {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 20px;
-    color: #6070ff;
-    text-decoration: none;
-    height: 20px;
+    height: 30px;
   }
 
   .nav-link {
@@ -269,7 +264,7 @@ body {
   }
 
   #in-touch {
-    color: #7f8cff;
+    color: #001aff;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -286,7 +281,7 @@ body {
     padding: 0;
     width: 170px;
     height: 20px;
-    color: #505f79;
+    color: #000;
   }
 
   .card img {
@@ -790,7 +785,7 @@ body {
     height: 10%;
     background: #fff;
     border-radius: 8px;
-    color: #6070ff;
+    color: #001aff;
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
@@ -897,13 +892,8 @@ body {
   }
 
   .nav-branding {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 20px;
-    color: #6070ff;
-    text-decoration: none;
-    height: 20px;
-    margin: 25px 155px;
+    height: 60px;
+    margin: 15px 155px;
   }
 
   .nav-link {
@@ -916,7 +906,7 @@ body {
     padding: 10px 12px;
     color: #344563;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 20px;
   }
 
@@ -1021,7 +1011,7 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    color: #7f8cff;
+    color: #001aff;
   }
 
   .social-icons {
@@ -1033,7 +1023,11 @@ body {
     padding: 12px;
     width: 170px;
     height: 20px;
-    color: #505f79;
+    cursor: pointer;
+  }
+
+  .social-icons li a {
+    color: #000;
   }
 
   .card {
@@ -1576,7 +1570,7 @@ body {
     height: 10%;
     background: #fff;
     border-radius: 8px;
-    color: #6070ff;
+    color: #001aff;
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
