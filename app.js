@@ -14,23 +14,27 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
 
 const cards = [
   {
-    name: 'Todo list',
+    name: 'Bookstore CMS',
     company: 'Hadi',
     stack: 'Back End Dev',
-    year: '2015',
+    year: '2022',
     description: `
-    You can add your todo and also you can remove your todo.
+    this project is build using React and redux that can do the following.
+
+    Display a list of books.
+    Add a book.
+    Remove a selected book.
     `,
-    featuredImage: './images/Todo-list.png',
-    tech1: 'html',
-    tech2: 'css',
+    featuredImage: './images/BookStore.png',
+    tech1: 'React',
+    tech2: 'Redux',
     tech3: 'javascript',
     tech4: 'github',
     tech5: 'ruby',
     tech6: 'Bootstrap',
     modalId: 'card1',
-    liveVersionLink: 'https://hadi111jafari.github.io/To-Do-List/',
-    sourceLink: 'https://github.com/Hadi111jafari/To-Do-List',
+    liveVersionLink: 'https://cheerful-klepon-025bfa.netlify.app/',
+    sourceLink: 'https://github.com/Hadi111jafari/bookstore',
   },
 
   {
@@ -54,23 +58,23 @@ const cards = [
   },
 
   {
-    name: 'Covid19 Tracker',
+    name: 'Math Magicians',
     company: 'CANOPY',
     stack: 'Front End Dev',
     year: '2022',
     description: `
-    This project is about building a mobile web application to check a list of metrics (numeric values) that is making use of React and Redux.
+    This is a calculator app which I have build using react.
  `,
-    featuredImage: './images/Snapshoot-Portfolio2.png',
+    featuredImage: './images/calculator.png',
     tech1: 'React',
     tech2: 'css',
-    tech3: 'Redux',
+    tech3: 'Javascrip',
     tech4: 'github',
     tech5: 'ruby',
     tech6: 'Bootstrap',
     modalId: 'card3',
-    liveVersionLink: 'https://hadi111jafari.github.io/covid19-tracker/',
-    sourceLink: 'https://github.com/Hadi111jafari/covid19-tracker',
+    liveVersionLink: 'https://remarkable-starship-783528.netlify.app/',
+    sourceLink: 'https://github.com/Hadi111jafari/Math-Magicians',
   },
   {
     name: 'Pokedex',
