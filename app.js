@@ -34,55 +34,52 @@ const cards = [
   },
 
   {
-    name: 'Multi-Post Stories',
+    name: 'Book Car',
     company: 'CANOPY',
-    stack: 'Back End Dev',
-    year: '2015',
+    stack: 'Front End Dev',
+    year: '2022',
     description: `
-    Experimental content creation feature that allows users to add to an
-    existing story over the course of a day without spamming their
-    friends.
+    Book car is a platform to book a car that is present in different cities for a given period of time. The user selects the duration of rental per car model type and price range. if a user is an admin he can manage the car resources by updating the list of cars in the database.
     `,
-    featuredImage: './images/Snapshoot-Portfolio1.png',
-    tech1: 'html',
-    tech2: 'css',
-    tech3: 'javascript',
+    featuredImage: './images/Screenshotp10.png',
+    tech1: 'React',
+    tech2: 'Redux',
+    tech3: 'Tailwindcss',
     tech4: 'github',
     tech5: 'ruby',
     tech6: 'Bootstrap',
     modalId: 'card2',
-    liveVersionLink: 'https://github.com/hadi111jafari',
-    sourceLink: 'https://github.com/hadi111jafari',
+    liveVersionLink: 'https://bookcar.onrender.com/',
+    sourceLink: 'https://github.com/Hadi111jafari/CarBooking-Frontend',
   },
 
   {
-    name: 'Facebook 360',
+    name: 'Covid19 Tracker',
     company: 'CANOPY',
-    stack: 'Back End Dev',
-    year: '2015',
+    stack: 'Front End Dev',
+    year: '2022',
     description: `
-    Exploring the future of media in Facebook's first Virtual Reality
-    app; a place to discover and enjoy 360 photos and videos on Gear VR. `,
+    This project is about building a mobile web application to check a list of metrics (numeric values) that is making use of React and Redux.
+ `,
     featuredImage: './images/Snapshoot-Portfolio2.png',
-    tech1: 'html',
+    tech1: 'React',
     tech2: 'css',
-    tech3: 'javascript',
+    tech3: 'Redux',
     tech4: 'github',
     tech5: 'ruby',
     tech6: 'Bootstrap',
     modalId: 'card3',
-    liveVersionLink: 'https://github.com/hadi111jafari',
-    sourceLink: 'https://github.com/hadi111jafari',
+    liveVersionLink: 'https://hadi111jafari.github.io/covid19-tracker/',
+    sourceLink: 'https://github.com/Hadi111jafari/covid19-tracker',
   },
   {
-    name: 'Uber Navigation',
+    name: 'Pokedex',
     company: 'CANOPY',
     stack: 'Back End Dev',
-    year: '2015',
+    year: '2022',
     description: `
-    A smart assistant to make driving more safe, efficient, and fun by
-    unlocking your most expensive computer: your car. `,
-    featuredImage: './images/Snapshoot-Portfolio2.png',
+    This web app displays a list of pokemons. Users can like thier favorite pokemons and make comments about them. Comments and likes are posted to Involment API. A couple of test are made posible using the Jest framework for testing.`,
+    featuredImage: './images/pokedex.png',
     tech1: 'html',
     tech2: 'css',
     tech3: 'javascript',
@@ -90,8 +87,8 @@ const cards = [
     tech5: 'ruby',
     tech6: 'Bootstrap',
     modalId: 'card4',
-    liveVersionLink: 'https://github.com/hadi111jafari',
-    sourceLink: 'https://github.com/hadi111jafari',
+    liveVersionLink: 'https://hadi111jafari.github.io/capstone2-API-webapp/',
+    sourceLink: 'https://github.com/Hadi111jafari/capstone2-API-webapp ',
   },
 ];
 
