@@ -4,6 +4,7 @@
 
 
 ## Built With
+- JavaScript
 - html
 - css
 
