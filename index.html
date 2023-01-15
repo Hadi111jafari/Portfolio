@@ -22,9 +22,9 @@
       function gtag() {
         window.dataLayer.push(arguments);
       }
-      gtag("js", new Date());
+      gtag('js', new Date());
 
-      gtag("config", "G-MLFZJL7BMP");
+      gtag('config', 'G-MLFZJL7BMP');
     </script>
   </head>
   <body>
@@ -35,10 +35,10 @@
           <a href="#" class="nav-link">Portfolio</a>
         </li>
         <li class="nav-item">
-          <a href="#ab-lang" class="nav-link">About</a>
+          <a href="#about-container" class="nav-link">About</a>
         </li>
         <li class="nav-item">
-          <a href="#contacts" class="nav-link">Contact</a>
+          <a href="#contacts-container" class="nav-link">Contact</a>
         </li>
       </ul>
       <div class="hamburger">
@@ -48,47 +48,55 @@
       </div>
     </nav>
 
-    <header class="content-area">
-      <h1 id="intro">
+    <header class="header-container">
+      <h1 id="header-intro">
         <span class="author-name"> I'm Abdul Hadi Jafari </span>
         <span class="greet"> Glad to see you! </span>
       </h1>
-      <p id="bio">
+      <p id="header-bio">
         I’m a software developer! I can help you build a product , feature or
         website Look through some of my work and experience! If you like what
         you see and have a project you need coded, don’t hestiate to contact me.
       </p>
-      <div class="social">
-        <h2 id="in-touch">LET'S CONNECT</h2>
-        <ul class="social-icons">
+      <div class="header-social-icons">
+        <h2 id="header-connect">LET'S CONNECT</h2>
+        <ul class="header-social-icons-list">
           <li>
-            <a href="https://twitter.com/HadiJaf62814146"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://twitter.com/HadiJaf62814146"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/abdul-hadi-jafari"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/abdul-hadi-jafari"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
           </li>
           <li>
-            <a href="https://medium.com/@abdulhadijafari2015"><i class="fa-brands fa-medium"></i></a>
+            <a href="https://medium.com/@abdulhadijafari2015"
+              ><i class="fa-brands fa-medium"></i
+            ></a>
           </li>
           <li>
-            <a href="https://github.com/Hadi111jafari"><i class="fa-brands fa-github"></i></a>
+            <a href="https://github.com/Hadi111jafari"
+              ><i class="fa-brands fa-github"></i
+            ></a>
           </li>
           <li>
-            <a href="https://angel.co/u/abdul-hadi-jafari"><i class="fa-brands fa-angellist"></i></a>
+            <a href="https://angel.co/u/abdul-hadi-jafari"
+              ><i class="fa-brands fa-angellist"></i
+            ></a>
           </li>
         </ul>
       </div>
     </header>
     <main>
-      <!-- Modal -->
       <div class="modal-overlay">
         <div class="modal-container"></div>
       </div>
 
-      <div id="cards"></div>
-
-      <section id="ab-lang">
-        <div id="about1">
+      <div id="projects"></div>
+      <section id="about-container">
+        <div id="about-inner">
           <h3>
             About <br />
             Myself
@@ -100,68 +108,114 @@
             hestiate to contact me.
           </p>
 
-          <div id="about-social">
-            <p id="connection">Let's connect</p>
-            <ul class="social-icons">
+          <div id="about-social-icons">
+            <span id="about-connect">Let's connect</span>
+            <ul class="about-social-icons">
               <li>
-                <a href="https://twitter.com/HadiJaf62814146"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://twitter.com/HadiJaf62814146"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/abdul-hadi-jafari"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/abdul-hadi-jafari"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
               </li>
               <li>
-                <a href="https://medium.com/@abdulhadijafari2015"><i class="fa-brands fa-medium"></i></a>
+                <a href="https://medium.com/@abdulhadijafari2015"
+                  ><i class="fa-brands fa-medium"></i
+                ></a>
               </li>
               <li>
-                <a href="https://github.com/Hadi111jafari"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/Hadi111jafari"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
               </li>
               <li>
-                <a href="https://angel.co/u/abdul-hadi-jafari"><i class="fa-brands fa-angellist"></i></a>
+                <a href="https://angel.co/u/abdul-hadi-jafari"
+                  ><i class="fa-brands fa-angellist"></i
+                ></a>
               </li>
             </ul>
           </div>
 
-          <button type="button" id="get-resume">Get my resume</button>
+          <div id="resume">
+            <a
+              id="about-get-resume"
+              href="https://docs.google.com/document/d/1KLP8Kl-7W6H2ErovNLd9T8xm4K50I8FPbX2qY4bR_pM/edit?usp=sharing"
+              >Get my resume</a
+            >
+          </div>
         </div>
+        <div class="about-showcase-container">
+          <div class="accordion">Languages</div>
+          <div class="about-languages-list panel">
+            <div class="about-language">
+              <img src="./images/javascript.png" alt="JavaScript" />
+              <p>JavaScript</p>
+            </div>
+            <div class="about-language">
+              <img src="./images/ruby.png" alt="Ruby" />
+              <p>Ruby</p>
+            </div>
+            <div class="about-language">
+              <img src="./images/sql.png" alt="SQL" />
+              <p>SQL</p>
+            </div>
+            <div class="about-language">
+              <img src="./images/java.png" alt="Java" />
+              <p>Java</p>
+            </div>
+          </div>
+          <div class="seperator"></div>
 
-        <div class="lang">
-          <ul class="showcase">
-            <li class="showcase-list">
-              <p>Languages</p>
-              <i class="fas fa-caret-down accordion"></i>
-            </li>
-            <li>
-              <ul id="languages">
-                <li class="language">
-                  <img src="./images/javascript.png" alt="JavaScript" />
-                  <p>JavaScript</p>
-                </li>
-                <li class="language">
-                  <img src="./images/html5.png" alt="html5" />
-                  <p>HTML</p>
-                </li>
-                <li class="language">
-                  <img src="./images/css3.png" alt="css3" />
-                  <p>CSS</p>
-                </li>
-              </ul>
-            </li>
-            <li class="showcase-list">
-              <p>Frameworks</p>
-              <i class="fas fa-caret-right accordion"></i>
-            </li>
-            <li class="showcase-list">
-              <p>Skills</p>
-              <i class="fas fa-caret-right accordion"></i>
-            </li>
-          </ul>
+          <div class="accordion">Frameworks</div>
+          <div class="about-languages-list panel">
+            <div class="about-language">
+              <img src="./images/reactimg.png" alt="React" />
+              <p>React</p>
+            </div>
+            <div class="about-language">
+              <img src="./images/railss.png" alt="Ruby on Rails" />
+              <p>ROR</p>
+            </div>
+            <div class="about-language">
+              <img src="./images/tailwind.png" alt="Tailwind" />
+              <p>Tailwind</p>
+            </div>
+            <div class="about-language">
+              <img src="./images/nextjs.jpeg" alt="Next js" />
+              <p>Next js</p>
+            </div>
+          </div>
+          <div class="seperator"></div>
+
+          <div class="accordion">Skills</div>
+          <div class="about-languages-list panel">
+            <div class="about-language">
+              <p>Project management</p>
+            </div>
+            <div class="about-language">
+              <p>Teamwork</p>
+            </div>
+            <div class="about-language">
+              <p>Critical thinking</p>
+            </div>
+            <div class="about-language">
+              <p>Leadership</p>
+            </div>
+            <div class="about-language">
+              <p>Taking initiative</p>
+            </div>
+          </div>
+          <div class="seperator"></div>
         </div>
       </section>
     </main>
-    <section id="contacts">
+    <section id="contacts-container">
       <footer>
         <h2 id="contact-me">Contact me</h2>
-        <p id="para">
+        <p id="contact-text">
           If you have an application you are interested in developing, a feature
           that you need built or a project that needs coding. I’d love to help
           with it
@@ -193,7 +247,7 @@
           ></textarea>
           <small class="error"></small>
           <div>
-            <button class="button" type="submit">Get in Touch</button>
+            <button class="contact-button" type="submit">Get in Touch</button>
             <p id="success"></p>
           </div>
         </form>
