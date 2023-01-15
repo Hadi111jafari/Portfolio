@@ -1,22 +1,31 @@
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
+const html = document.querySelector('html');
+const body = document.querySelector('body');
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
   navMenu.classList.toggle('active');
   document.querySelector('body').classList.toggle('active');
+  // if (body.classList.contains('active')) {
+  //   html.style.overflow = 'hidden';
+  // } else {
+  //   html.style.overflow = 'auto';
+  // }
 });
-document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click', () => {
-  hamburger.classList.remove('active');
-  navMenu.classList.remove('active');
-  document.querySelector('body').classList.toggle('active');
-}));
+document.querySelectorAll('.nav-link').forEach((n) =>
+  n.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('active');
+    document.querySelector('body').classList.toggle('active');
+  })
+);
 
-const cards = [
+const projects = [
   {
     name: 'Bookstore CMS',
-    company: 'Hadi',
-    stack: 'Back End Dev',
+    company: 'MICROVERSE',
+    stack: 'Front End Dev',
     year: '2022',
     description: `
     this project is build using React and redux that can do the following.
@@ -39,19 +48,19 @@ const cards = [
 
   {
     name: 'Book Car',
-    company: 'CANOPY',
-    stack: 'Front End Dev',
+    company: 'MICROVERSE',
+    stack: 'Full Stack Dev',
     year: '2022',
     description: `
     Book car is a platform to book a car that is present in different cities for a given period of time. The user selects the duration of rental per car model type and price range. if a user is an admin he can manage the car resources by updating the list of cars in the database.
     `,
     featuredImage: './images/Screenshotp10.png',
     tech1: 'React',
-    tech2: 'Redux',
+    tech2: 'ROR',
     tech3: 'Tailwindcss',
     tech4: 'github',
     tech5: 'ruby',
-    tech6: 'Bootstrap',
+    tech6: 'Redux',
     modalId: 'card2',
     liveVersionLink: 'https://bookcar.onrender.com/',
     sourceLink: 'https://github.com/Hadi111jafari/CarBooking-Frontend',
@@ -59,7 +68,7 @@ const cards = [
 
   {
     name: 'Math Magicians',
-    company: 'CANOPY',
+    company: 'MICROVERSE',
     stack: 'Front End Dev',
     year: '2022',
     description: `
@@ -78,13 +87,13 @@ const cards = [
   },
   {
     name: 'Pokedex',
-    company: 'CANOPY',
-    stack: 'Back End Dev',
+    company: 'MICROVERSE',
+    stack: 'Front End Dev',
     year: '2022',
     description: `
     This web app displays a list of pokemons. Users can like thier favorite pokemons and make comments about them. Comments and likes are posted to Involment API. A couple of test are made posible using the Jest framework for testing.`,
     featuredImage: './images/pokedex.png',
-    tech1: 'html',
+    tech1: 'webpack',
     tech2: 'css',
     tech3: 'javascript',
     tech4: 'github',
@@ -96,105 +105,102 @@ const cards = [
   },
 ];
 
-function newCard(card) {
+function newProject(project) {
   return `
-    <div class="card">
-        <img src="${card.featuredImage}" alt="" />
-        <div class="card-content">
-          <h2>${card.name}</h2>
-          <div class="list-1">
-            <p>${card.company}</p>
-            <ul class="field">
-              <li class="backend">${card.stack}</li>
-              <li class="year">${card.year}</li>
-            </ul>
-          </div>
-
-          <p>
-          ${card.description}
-          </p>
-          <ul class="languages">
-            <li>${card.tech1}</li>
-            <li>${card.tech2}</li>
-            <li>${card.tech3}</li>
+    <div class="project-container">
+      <img src="${project.featuredImage}" alt=${project.name} />
+      <div class="project-content">
+        <h2>${project.name}</h2>
+        <div class="project-info">
+          <p>${project.company}</p>
+          <ul class="project-field">
+            <li class="project-backend">${project.stack}</li>
+            <li class="project-year">${project.year}</li>
           </ul>
-          <div id="btn-curser">
-          <button onclick="openModal('${card.modalId}')" class="btn modal-btn" id="${card.modalId}">See Project</button>
-            
-          </div>
+        </div>
+        <p>
+        ${project.description}
+        </p>
+        <ul class="project-technologies">
+          <li>${project.tech1}</li>
+          <li>${project.tech2}</li>
+          <li>${project.tech3}</li>
+        </ul>
+        <div id="js-modal-btn-container">
+        <button onclick="openModal('${project.modalId}')" class="js-btn js-modal-btn" id="${project.modalId}">See Project</button>
         </div>
       </div>
+    </div>
   `;
 }
 // eslint-disable-next-line no-unused-vars
 function openModal(modalId) {
   const modalOverlay = document.querySelector('.modal-overlay');
-
+  html.style.overflow = 'hidden';
   modalOverlay.classList.add('show-container');
-
-  cards.forEach((card) => {
-    if (card.modalId === modalId) {
+  projects.forEach((project) => {
+    if (project.modalId === modalId) {
       const x = document.querySelector('.modal-container');
       x.innerHTML = `
-  <div class="cardP">
-  <div class="card-contentP">
-  <h2>${card.name}</h2>
-  <div class="list-1P">
-  <p>${card.company}</p>
-  <ul class="fieldP">
-  <li class="backendP">${card.stack}</li>
-  <li class="yearP">${card.year}</li>
-  </ul>
-  </div>
-  <img id="imgP" src="${card.featuredImage}" alt="" />
-   <div id="wrapper-item">
-   <div id="item1"> 
-    <p id="paraP">
-    ${card.description}
-    </p>
-    </div>
-    <div id="wrapper2">
-    <ul class="languages">
-      <li>${card.tech1}</li>
-      <li>${card.tech2}</li>
-      <li>${card.tech3}</li>
-    </ul>
-  
-    <div id="btn-curser">
-    <div style="display:flex;">
-    <div class="SLB">
-        <a href="${card.liveVersionLink}">See Live </a>
-        <img src="images/onoff.png" alt="livevsersionlink" />
-    </div>
-    <div class="SLB">
-        <a href="${card.sourceLink}">source code</a>
-        <img src="images/github1.png" alt="github" />
-    </div>
-    </div>      
-   </div>
-   </div>
-   </div>
-   </div>
-   <button class="btn-close"><i class="fas fa-times"></i></button>
-</div>
+      <div class="js-modal-container">
+        <div class="js-modal-content">
+          <h2>${project.name}</h2>
+          <div class="js-modal-content-top">
+            <p>${project.company}</p>
+            <ul class="js-modal-field">
+              <li class="js-modal-backend">${project.stack}</li>
+              <li class="js-modal-year">${project.year}</li>
+            </ul>
+          </div>
+          <img id="js-modal-image" src="${project.featuredImage}" alt="${project.name}" />
+          <div id="js-modal-content-bottom">
+            <div id="js-modal-content-bottom-description">
+              <p id="js-modal-description">
+              ${project.description}
+              </p>
+            </div>
+            <div id="js-modal-tech-and-links">
+              <ul class="js-modal-technologies">
+                <li>${project.tech1}</li>
+                <li>${project.tech2}</li>
+                <li>${project.tech3}</li>
+              </ul>
+              <div id="js-modal-links-container">
+                <div style="display:flex;">
+                  <div class="js-modal-links">
+                    <a href="${project.liveVersionLink}">See Live </a>
+                    <img src="images/onoff.png" alt="livevsersionlink" />
+                  </div>
+                  <div class="js-modal-links">
+                    <a href="${project.sourceLink}">source code</a>
+                    <img src="images/github1.png" alt="github" />
+                  </div>
+                </div>      
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn-close"><i class="fas fa-times"></i></button>
+      </div>
 `;
     }
   });
   const closeBtn = document.querySelector('.btn-close');
   closeBtn.addEventListener('click', () => {
     modalOverlay.classList.remove('show-container');
+    html.style.overflowY = 'auto';
   });
 }
-const generatedCard = cards.map((card) => {
-  const cardContainer = document.createElement('div');
-  cardContainer.innerHTML = newCard(card);
-  return cardContainer;
+const generatedProject = projects.map((project) => {
+  const projectContainer = document.createElement('div');
+  projectContainer.innerHTML = newProject(project);
+  return projectContainer;
 });
 
-const cardsContainer = document.querySelector('#cards');
-const cardQuantity = cards.length;
-for (let i = 0; i < cardQuantity; i += 1) {
-  cardsContainer.appendChild(generatedCard[i]);
+const projectsContainer = document.querySelector('#projects');
+const projectQuantity = projects.length;
+for (let i = 0; i < projectQuantity; i += 1) {
+  projectsContainer.appendChild(generatedProject[i]);
 }
 
 // Get Data
@@ -272,3 +278,16 @@ window.addEventListener('load', () => {
   }
 });
 
+let acc = document.getElementsByClassName('accordion');
+let i;
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener('click', function () {
+    this.classList.toggle('active');
+    let panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + 'px';
+    }
+  });
+}
