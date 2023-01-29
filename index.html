@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
       integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
       crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
+    >
+    <link rel="stylesheet" href="style.css" >
     <title>Portfolio</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
@@ -22,23 +22,23 @@
       function gtag() {
         window.dataLayer.push(arguments);
       }
-      gtag("js", new Date());
+      gtag('js', new Date());
 
-      gtag("config", "G-MLFZJL7BMP");
+      gtag('config', 'G-MLFZJL7BMP');
     </script>
   </head>
   <body>
     <nav class="navbar">
-      <img src="images/Logo.png" class="nav-branding" alt="Hadi's logo" />
+      <img src="images/hadi.jpg" alt="Hadi Jafari" >
       <ul class="nav-menu">
         <li class="nav-item">
           <a href="#" class="nav-link">Portfolio</a>
         </li>
         <li class="nav-item">
-          <a href="#ab-lang" class="nav-link">About</a>
+          <a href="#about-container" class="nav-link">About</a>
         </li>
         <li class="nav-item">
-          <a href="#contacts" class="nav-link">Contact</a>
+          <a href="#contacts-container" class="nav-link">Contact</a>
         </li>
       </ul>
       <div class="hamburger">
@@ -48,124 +48,186 @@
       </div>
     </nav>
 
-    <header class="content-area">
-      <h1 id="intro">
-        <span class="author-name"> I'm Abdul Hadi Jafari </span>
-        <span class="greet"> Glad to see you! </span>
+    <header class="header-container">
+      <h1 id="header-intro">
+        <span class="author-name">Hi there, I'm Hadi</span>
+        <span class="greet">
+          Full Stack <span class="greet-span">Developer,</span></span
+        >
+        <span class="greet-1">Junior and Learner</span>
       </h1>
-      <p id="bio">
-        I’m a software developer! I can help you build a product , feature or
-        website Look through some of my work and experience! If you like what
-        you see and have a project you need coded, don’t hestiate to contact me.
+      <p id="header-bio">
+        I’m a software developer! in my 6 years of academic experience (college, bootcamp, self-study) in building and maintenance of web applications, I worked with both senior and junior developers in deffirent projects whether partner or as a coach  checkout some of my work bellow.
       </p>
-      <div class="social">
-        <h2 id="in-touch">LET'S CONNECT</h2>
-        <ul class="social-icons">
+      <div class="header-social-icons">
+        <h2 id="header-connect">LET'S CONNECT</h2>
+        <ul class="header-social-icons-list">
           <li>
-            <a href="https://twitter.com/HadiJaf62814146"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://twitter.com/HadiJaf62814146"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/abdul-hadi-jafari"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/abdul-hadi-jafari"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
           </li>
           <li>
-            <a href="https://medium.com/@abdulhadijafari2015"><i class="fa-brands fa-medium"></i></a>
+            <a href="https://medium.com/@abdulhadijafari2015"
+              ><i class="fa-brands fa-medium"></i
+            ></a>
           </li>
           <li>
-            <a href="https://github.com/Hadi111jafari"><i class="fa-brands fa-github"></i></a>
+            <a href="https://github.com/Hadi111jafari"
+              ><i class="fa-brands fa-github"></i
+            ></a>
           </li>
           <li>
-            <a href="https://angel.co/u/abdul-hadi-jafari"><i class="fa-brands fa-angellist"></i></a>
+            <a
+              href="mailto:abdulhadijafari2015@gmail.com?"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
           </li>
         </ul>
       </div>
     </header>
     <main>
-      <!-- Modal -->
       <div class="modal-overlay">
         <div class="modal-container"></div>
       </div>
 
-      <div id="cards"></div>
-
-      <section id="ab-lang">
-        <div id="about1">
+      <div id="projects"></div>
+      <section id="about-container" class="reveal">
+        <div id="about-inner">
           <h3>
-            About <br />
+            About <br >
             Myself
           </h3>
           <p>
-            Hello I’m a software developer! I can help you build a product ,
-            feature or website Look through some of my work and experience! If
-            you like what you see and have a project you need coded, don’t
-            hestiate to contact me.
+            I’m a software developer! with 6 years of academic experience (college,
+            bootcamp, self-taught) in building and maintaining web
+            apps. I worked as technical support engineer at Ministry of Urban
+            and City Development in kabul Afghanistan, mentored novice
+            developers at Microverse in this period I worked with both senior
+            and junior developers in deffirent projects. Whether you have a
+            question or just want to say hi, don’t hestiate to contact me.
           </p>
 
-          <div id="about-social">
-            <p id="connection">Let's connect</p>
-            <ul class="social-icons">
+          <div id="about-social-icons">
+            <span id="about-connect">Let's connect</span>
+            <ul class="about-social-icons">
               <li>
-                <a href="https://twitter.com/HadiJaf62814146"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://twitter.com/HadiJaf62814146"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/abdul-hadi-jafari"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/abdul-hadi-jafari"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
               </li>
               <li>
-                <a href="https://medium.com/@abdulhadijafari2015"><i class="fa-brands fa-medium"></i></a>
+                <a href="https://github.com/Hadi111jafari"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
               </li>
               <li>
-                <a href="https://github.com/Hadi111jafari"><i class="fa-brands fa-github"></i></a>
+                <a href="https://angel.co/u/abdul-hadi-jafari"
+                  ><i class="fa-brands fa-angellist"></i
+                ></a>
               </li>
               <li>
-                <a href="https://angel.co/u/abdul-hadi-jafari"><i class="fa-brands fa-angellist"></i></a>
+                <a
+                  href="mailto:abdulhadijafari2015@gmail.com?"
+                  ><i class="fa-solid fa-envelope"></i
+                ></a>
               </li>
             </ul>
           </div>
 
-          <button type="button" id="get-resume">Get my resume</button>
+          <div id="resume">
+            <a
+              id="about-get-resume"
+              href="https://docs.google.com/document/d/1KLP8Kl-7W6H2ErovNLd9T8xm4K50I8FPbX2qY4bR_pM/edit?usp=sharing"
+              >Get my resume</a
+            >
+          </div>
         </div>
+        <div class="about-showcase-container">
+          <div class="accordion">Languages</div>
+          <div class="about-languages-list panel">
+            <div class="about-language">
+              <img src="./images/javascript.png" alt="JavaScript" />
+              <p>JavaScript</p>
+            </div>
+            <div class="about-language">
+              <img src="./images/ruby.png" alt="Ruby" />
+              <p>Ruby</p>
+            </div>
+            <div class="about-language">
+              <img src="./images/sql.png" alt="SQL" />
+              <p>SQL</p>
+            </div>
+            <div class="about-language">
+              <img src="./images/java.png" alt="Java" />
+              <p>Java</p>
+            </div>
+          </div>
+          <div class="seperator"></div>
 
-        <div class="lang">
-          <ul class="showcase">
-            <li class="showcase-list">
-              <p>Languages</p>
-              <i class="fas fa-caret-down accordion"></i>
-            </li>
-            <li>
-              <ul id="languages">
-                <li class="language">
-                  <img src="./images/javascript.png" alt="JavaScript" />
-                  <p>JavaScript</p>
-                </li>
-                <li class="language">
-                  <img src="./images/html5.png" alt="html5" />
-                  <p>HTML</p>
-                </li>
-                <li class="language">
-                  <img src="./images/css3.png" alt="css3" />
-                  <p>CSS</p>
-                </li>
-              </ul>
-            </li>
-            <li class="showcase-list">
-              <p>Frameworks</p>
-              <i class="fas fa-caret-right accordion"></i>
-            </li>
-            <li class="showcase-list">
-              <p>Skills</p>
-              <i class="fas fa-caret-right accordion"></i>
-            </li>
-          </ul>
+          <div class="accordion">Frameworks</div>
+          <div class="about-languages-list panel">
+            <div class="about-language">
+              <img src="./images/reactimg.png" alt="React" />
+              <p>React</p>
+            </div>
+            <div class="about-language">
+              <img src="./images/railss.png" alt="Ruby on Rails" />
+              <p>ROR</p>
+            </div>
+            <div class="about-language">
+              <img src="./images/tailwind.png" alt="Tailwind" />
+              <p>Tailwind</p>
+            </div>
+            <div class="about-language">
+              <img src="./images/nextjs.jpeg" alt="Next js" />
+              <p>Next js</p>
+            </div>
+          </div>
+          <div class="seperator"></div>
+
+          <div class="accordion">Skills</div>
+          <div class="about-languages-list panel">
+            <div class="about-language">
+              <p>Project management</p>
+            </div>
+            <div class="about-language">
+              <p>Teamwork</p>
+            </div>
+            <div class="about-language">
+              <p>Critical thinking</p>
+            </div>
+            <div class="about-language">
+              <p>Leadership</p>
+            </div>
+            <div class="about-language">
+              <p>Taking initiative</p>
+            </div>
+          </div>
+          <div class="seperator"></div>
         </div>
       </section>
     </main>
-    <section id="contacts">
+    <section id="contacts-container" class="reveal">
       <footer>
-        <h2 id="contact-me">Contact me</h2>
-        <p id="para">
-          If you have an application you are interested in developing, a feature
-          that you need built or a project that needs coding. I’d love to help
-          with it
+        <h2 id="contact-me">Let's Build Something Awesome</h2>
+        <p id="contact-text">
+          Feel free to reach out if you are looking for a developer, have a
+          question, or just want to connect.
         </p>
+        <a href="mailto:abdulhadijafari2015@gmail.com"
+          >abdulhadijafari2015@gmail.com</a
+        >
         <form action="https://formspree.io/f/mpzbdeab" method="post">
           <input
             class="name"
@@ -193,7 +255,7 @@
           ></textarea>
           <small class="error"></small>
           <div>
-            <button class="button" type="submit">Get in Touch</button>
+            <button class="contact-button" type="submit">Get in Touch</button>
             <p id="success"></p>
           </div>
         </form>
