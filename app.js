@@ -7,11 +7,6 @@ hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
   navMenu.classList.toggle('active');
   document.querySelector('body').classList.toggle('active');
-  // if (body.classList.contains('active')) {
-  //   html.style.overflow = 'hidden';
-  // } else {
-  //   html.style.overflow = 'auto';
-  // }
 });
 document.querySelectorAll('.nav-link').forEach((n) =>
   n.addEventListener('click', () => {
@@ -107,12 +102,12 @@ const projects = [
 
 function newProject(project) {
   return `
-    <div class="project-container">
+    <div class="project-container reveal">
       <img src="${project.featuredImage}" alt=${project.name} />
       <div class="project-content">
         <h2>${project.name}</h2>
         <div class="project-info">
-          <p>${project.company}</p>
+          <p id="project-company">${project.company}</p>
           <ul class="project-field">
             <li class="project-backend">${project.stack}</li>
             <li class="project-year">${project.year}</li>
@@ -146,7 +141,7 @@ function openModal(modalId) {
         <div class="js-modal-content">
           <h2>${project.name}</h2>
           <div class="js-modal-content-top">
-            <p>${project.company}</p>
+            <p id="js-modal-company">${project.company}</p>
             <ul class="js-modal-field">
               <li class="js-modal-backend">${project.stack}</li>
               <li class="js-modal-year">${project.year}</li>
@@ -291,3 +286,21 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+function reveal() {
+  let reveals = document.querySelectorAll(".reveal");
+
+  for (let i = 0; i < reveals.length; i++) {
+    let windowHeight = window.innerHeight;
+    let elementTop = reveals[i].getBoundingClientRect().top;
+    let elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
