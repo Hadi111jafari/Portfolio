@@ -145,11 +145,17 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-between;
     padding: 24px;
     background-color: #fff;
+    position: sticky;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    height: 70px;
   }
 
   .navbar img {
     height: 100px;
     border-radius: 50%;
+    overflow: visible;
   }
 
   .nav-link {
@@ -984,8 +990,12 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
-    min-height: 70px;
+    height: 70px;
     padding: 0 24px;
+    position: sticky;
+    width: 100%;
+    z-index: 10;
+    top: 0;
   }
 
   .nav-menu {
@@ -1001,6 +1011,8 @@ body::-webkit-scrollbar-thumb {
     height: 130px;
     margin: 15px 155px;
     border-radius: 50%;
+    overflow: visible;
+    margin-top: 85px;
   }
 
   .nav-link {
