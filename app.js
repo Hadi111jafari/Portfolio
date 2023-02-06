@@ -23,11 +23,8 @@ const projects = [
     stack: 'Front End Dev',
     year: '2022',
     description: `
-    this project is build using React and redux that can do the following.
-
-    Display a list of books.
-    Add a book.
-    Remove a selected book.
+    This project is built using React and Redux and can do the following:
+    Display a list of books. Add a book. Remove a selected book.
     `,
     featuredImage: './images/BookStore.png',
     tech1: 'React',
@@ -47,7 +44,9 @@ const projects = [
     stack: 'Full Stack Dev',
     year: '2022',
     description: `
-    Book car is a platform to book a car that is present in different cities for a given period of time. The user selects the duration of rental per car model type and price range. if a user is an admin he can manage the car resources by updating the list of cars in the database.
+    Book car is a platform to book a car that is present in different cities for a given period of time.
+    The user selects the duration of rental per car model type and price range. If a user is an admin,
+    he can manage the car resources by updating the list of cars in the database.
     `,
     featuredImage: './images/Screenshotp10.png',
     tech1: 'React',
@@ -67,7 +66,7 @@ const projects = [
     stack: 'Front End Dev',
     year: '2022',
     description: `
-    This is a calculator app which I have build using react.
+    This is a calculator app that I have built using React.
  `,
     featuredImage: './images/calculator.png',
     tech1: 'React',
@@ -86,7 +85,9 @@ const projects = [
     stack: 'Front End Dev',
     year: '2022',
     description: `
-    This web app displays a list of pokemons. Users can like thier favorite pokemons and make comments about them. Comments and likes are posted to Involment API. A couple of test are made posible using the Jest framework for testing.`,
+    This web app displays a list of Pokémon. Users can "like" their favorite Pokémon and make comments about them.
+    Comments and likes are posted to the Involvement API. A couple of tests are made possible using the JEST framework for testing.
+    `,
     featuredImage: './images/pokedex.png',
     tech1: 'webpack',
     tech2: 'css',
