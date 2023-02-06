@@ -56,7 +56,7 @@ const projects = [
     tech5: 'ruby',
     tech6: 'Redux',
     modalId: 'card2',
-    liveVersionLink: 'https://bookcar.onrender.com/',
+    liveVersionLink: 'https://fbookcar.netlify.app/',
     sourceLink: 'https://github.com/Hadi111jafari/CarBooking-Frontend',
   },
 
