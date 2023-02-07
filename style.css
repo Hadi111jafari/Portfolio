@@ -358,7 +358,6 @@ body::-webkit-scrollbar-thumb {
     margin: 0;
     width: 100%;
     height: auto;
-    padding: 16px;
   }
 
   #js-modal-image {
@@ -1194,14 +1193,20 @@ body::-webkit-scrollbar-thumb {
 
   .project-container img {
     margin: 23px;
-    width: 35%;
-    height: 35%;
+    width: 40%;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   #js-modal-btn-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  #js-modal-btn-container button {
+    display: inline;
   }
 
   #curser {
