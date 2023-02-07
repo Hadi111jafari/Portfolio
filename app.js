@@ -66,7 +66,9 @@ const projects = [
     stack: 'Front End Dev',
     year: '2022',
     description: `
-    This is a calculator app that I have built using React.
+    Math magicians is a calculator that provides simple and advanced mathematical functions in a beautifully designed app.
+    Perform basic calculations such as addition, subtraction, multiplication, and division.
+    That I have built using React and CSS3 for styling. In order to deliver a bag-free product, I used Jest for testing this app.
  `,
     featuredImage: './images/calculator.png',
     tech1: 'React',
@@ -124,6 +126,16 @@ function newProject(project) {
         </ul>
         <div id="js-modal-btn-container">
         <button onclick="openModal('${project.modalId}')" class="js-btn js-modal-btn" id="${project.modalId}">See Project</button>
+        <div style="display:flex;">
+          <div class="js-modal-links">
+            <a href="${project.liveVersionLink}" target="_blank" rel="noreferrer noopener">See Live </a>
+            <img src="images/onoff.png" alt="livevsersionlink" />
+          </div>
+          <div class="js-modal-links">
+            <a href="${project.sourceLink}" target="_blank" rel="noreferrer noopener">source code</a>
+            <img src="images/github1.png" alt="github" />
+          </div>
+        </div>      
         </div>
       </div>
     </div>
@@ -164,11 +176,11 @@ function openModal(modalId) {
               <div id="js-modal-links-container">
                 <div style="display:flex;">
                   <div class="js-modal-links">
-                    <a href="${project.liveVersionLink}">See Live </a>
+                    <a href="${project.liveVersionLink}" target="_blank" rel="noreferrer noopener">See Live </a>
                     <img src="images/onoff.png" alt="livevsersionlink" />
                   </div>
                   <div class="js-modal-links">
-                    <a href="${project.sourceLink}">source code</a>
+                    <a href="${project.sourceLink}" target="_blank" rel="noreferrer noopener">source code</a>
                     <img src="images/github1.png" alt="github" />
                   </div>
                 </div>      
