@@ -23,8 +23,8 @@ const projects = [
     stack: 'Front End Dev',
     year: '2022',
     description: `
-    This project is built using React and Redux and can do the following:
-    Display a list of books. Add a book. Remove a selected book.
+    The Online Book Store is a web application that displays a list of books,
+    allows users to add and edit books by title or author, remove a selected book, and make comments. 
     `,
     featuredImage: './images/BookStore.png',
     tech1: 'React',
