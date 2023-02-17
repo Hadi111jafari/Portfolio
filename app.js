@@ -261,6 +261,7 @@ function saveD(usrD) {
     email: fEmail,
     message: fMessage,
   };
+  
   localStorage.setItem('user', JSON.stringify(usrD));
   let dataRecord = [];
   dataRecord = JSON.parse(localStorage.getItem('dUser'));
