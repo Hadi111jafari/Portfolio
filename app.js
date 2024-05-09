@@ -25,7 +25,7 @@ const projects = [
     description: `
     This project is a digital tool designed to help individuals and businesses manage their finances effectively by tracking income and expenses. With a budget tracker app, users can monitor their cash flow, categorize expenses, and set financial goals, making it easier to stay on top of their financial situation.
     `,
-    featuredImage: './images/BookStore.png',
+    featuredImage: './images/budget-tracker.jpeg',
     tech1: 'Nextjs 14',
     tech2: 'Prisma',
     tech3: 'TypeScript',
